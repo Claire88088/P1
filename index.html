@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- header -->
     <header class="header">
         <div class="topbar">
             <img src="assets/images/header/logo.png" alt="logo" class="topbar__logo">
             <nav class="topbar__nav">
                 <a href="#" class="active">Accueil</a>
                 <a href="#services">Services</a>
-                <a href="#">Portfolio</a>
+                <a href="#projects">Portfolio</a>
                 <a href="#">Contact</a>
             </nav>
         </div>
@@ -41,6 +42,7 @@
         </div>
     </header>
 
+    <!-- services section -->
     <section class="section services" id="services">
         <header class="section__header">
             <h2 class="section__header__title">Nos Services</h2>
@@ -87,5 +89,50 @@
             </div>
         </div>
     </section>
+
+    <!-- projects section -->
+    <section class="section projects" id="projects">
+        <header class="section__header">
+            <h2 class="section__header__title">Nos projets</h2>
+            <div class="deco">
+                <div class="deco__item"></div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non fuga  eum maxime exercitationem ipsam ducimus? Amet.</p>
+        </header>
+        <nav class="section__nav">
+            <div class="section__nav__button active">
+                <a id="nav-button" class="button nav-button active" href="#">All Works</a>
+                <i class="fas fa-caret-down caret"></i>    
+            </div>
+            <div class="section__nav__button">
+                <a class="button nav-button" href="#">Creative</a>
+                <i class="fas fa-caret-down caret"></i>    
+            </div>
+            <div class="section__nav__button">
+                <a class="button nav-button" href="#">Coporate</a>
+                <i class="fas fa-caret-down caret"></i>    
+            </div>
+            <div class="section__nav__button">
+                <a class="button nav-button" href="#">Portfolio</a>
+                <i class="fas fa-caret-down caret"></i>    
+            </div>
+        </nav>
+        
+        <div class="section__content">
+            <figure class="project">
+                <div class="project__image">
+                    <img src="assets/images/projects/01.jpg" alt="projet 1" class="project__image">
+                </div>
+                <figcaption class="project__content">
+                    <h4 class="project__title">Portfolio 1</h4>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div class="eye-logo">
+                        <i class="far fa-eye"></i>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
 </body>
 </html>
