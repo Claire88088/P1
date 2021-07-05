@@ -1,5 +1,8 @@
 /*
+texte: #222;
 blue : #3491B2
+button: #4cc5f1;
+grey transparent: rgba(0, 0, 0, 0.2);
 */
 
 * {
@@ -9,7 +12,7 @@ blue : #3491B2
 body {
     margin: 0;
     font-family: sans-serif;
-    color:#222;
+    color: #222;
     font-size: 14px;
     max-width: 1600px;
 }
@@ -19,6 +22,7 @@ a {
     text-decoration: none;
 }
 
+/* topbar */
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -36,12 +40,110 @@ a {
     height: 50px;
     line-height: 50px;
     padding: 0 15px;
-    border-top: solid 2px transparent;
+    border-top: solid 3px transparent;
     transition: border-top-color .3s;
 }
 
 .topbar__nav a:hover,
 .topbar__nav a.active {
     border-top-color: #3491B2;
-} 
+}
 
+/* carousel */
+.carousel {
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.carousel__content {
+    color: #fff;
+    position: absolute;
+    top: 50%; 
+    left: 150px;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+.carousel__content h1 {
+    text-transform: uppercase;
+}
+
+.colored-word {
+    color: #3491B2;
+}
+
+.button {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #4cc5f1;
+    border-bottom: solid 3px #3491B2;
+    border-radius: 3px;
+    font-weight: 700;
+    transition: background-color .3s;
+}
+
+.button:hover {
+    background-color: #3491B2;
+}
+
+.carousel__navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all .3s;
+}
+
+.arrow:hover {
+    color: #222;
+}
+
+.arrow-left {
+    transform: translateX(-50%);
+}
+
+.arrow-right {
+    transform: translateX(50%);
+}
+
+.arrow-left .fas {
+    transform: translateX(100%);
+}
+
+.arrow-right .fas {
+    transform: translateX(-100%);
+}
+
+.carousel__progress-bar {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 3px;
+}
+
+.carousel__progress-bar__item {
+    background: #3491B2;
+    width: 10%;
+    height: 3px;
+
+}
