@@ -13,7 +13,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     color: #222;
-    font-size: 14px;
+    font-size: 13px;
     max-width: 1600px;
 }
 
@@ -90,6 +90,7 @@ h2 {
     border-bottom: solid 3px #3491B2;
     border-radius: 3px;
     font-weight: 700;
+    color: #fff;
     transition: background-color .3s;
 }
 
@@ -335,7 +336,7 @@ h2 {
     color: #fff;
     width: 35px;
     height: 35px;
-    background: #4cc5f1;
+    background: rgb(76, 197, 241);
     border: solid 1px #fff;
     border-radius: 50%;
     display: flex;
@@ -350,4 +351,64 @@ h2 {
 
 .eye-logo:hover {
     background: #3491B2;
+}
+
+/* contact section */
+.contact {
+    height: 600px;
+    position: relative;
+}
+
+.contact iframe {
+    width: 100%;
+}
+
+.transparent {
+    height: 600px;
+    width: 100%;
+    background: rgba(76, 197, 241, .2);
+    position: absolute;
+    top: 0;
+}
+
+.contact__form {
+    position: absolute; 
+    top: 20px;
+    right: 5%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.contact__form address {
+    font-style: normal;
+    margin: 10px 0;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: dotted;
+}
+
+.form__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__body input,
+.form__body textarea {
+    border: solid 1px rgb(155, 155, 155);
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.contact__form button {
+    font-size: .9em;
+    border: none;
+    border-bottom: solid 3px #3491B2;
 }
